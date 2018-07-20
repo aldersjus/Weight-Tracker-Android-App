@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:id="@+id/weightTrackerFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="12dp"
+        android:layout_margin="4dp"
+        android:elevation="12dp"
+        android:paddingBottom="20dp"
+        android:contentDescription="@string/weightTrackerContent"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <jp.blogspot.jusoncode.weighttracker.WeightTrackerCustomViewGrid
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/secondCustomView"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center_horizontal"
+                custom:text="@string/targetWeight"
+                custom:image="@drawable/happy_face"
+                custom:weight="50.00kg"
+                android:layout_weight="0.06"
+                android:contentDescription="@string/targetWeight">
+
+            </jp.blogspot.jusoncode.weighttracker.WeightTrackerCustomViewGrid>
+
+            <jp.blogspot.jusoncode.weighttracker.WeightTrackerCustomViewGrid
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/firstCustomView"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center_horizontal"
+                custom:text="@string/currentWeight"
+                custom:image="@drawable/red_sad_face"
+                custom:weight="355.00kg"
+                android:layout_weight="0.06"
+                android:contentDescription="@string/currentWeight">
+
+            </jp.blogspot.jusoncode.weighttracker.WeightTrackerCustomViewGrid>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+              >
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bmi"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/textGrey"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginStart="20dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="45dp"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:id="@+id/bmiTextViewSet"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

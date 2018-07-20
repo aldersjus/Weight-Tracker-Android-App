@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="500dp"
+    android:layout_height="200dp"
+    android:background="@color/textGrey">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:textColor="@color/textGrey"
+        android:text="@string/congrats"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/green_happy_face"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/wellDone"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

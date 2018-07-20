@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="jp.blogspot.jusoncode.weighttracker.ActivitySettings">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:padding="12dp"
+        android:layout_margin="4dp"
+        android:elevation="12dp"
+        android:paddingBottom="20dp"
+        android:contentDescription="@string/activityContent"
+        >
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="20dp">
+
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/EnterTextStyleSettingsNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/background"
+                    android:layout_marginTop="10dp"/>
+
+                <RadioGroup
+                    android:id="@+id/radioGroupColours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <RadioButton
+                        android:id="@+id/radioButtonGreen"
+                        style="@style/EnterTextStyleSettingsNew"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:text="@string/grey" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonWhite"
+                        style="@style/EnterTextStyleSettingsNew"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:text="@string/white" />
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/textView9"
+                    style="@style/EnterTextStyleSettingsNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/graphPos" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupGraph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <RadioButton
+                        android:id="@+id/radioButtonTop"
+                        style="@style/EnterTextStyleSettingsNew"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:text="@string/top" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonBottom"
+                        style="@style/EnterTextStyleSettingsNew"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:text="@string/bottom" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    style="@style/EnterTextStyleSettingsNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/notifications" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupNotifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <RadioButton
+                        android:id="@+id/radioButtonNotificationsOn"
+                        style="@style/EnterTextStyleSettingsNew"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:text="@string/on" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonNotificationsOff"
+                        style="@style/EnterTextStyleSettingsNew"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:text="@string/off" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/EnterTextStyleSettingsNew"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/numberOf"
+                    />
+
+
+
+                            <RadioGroup
+                                android:id="@+id/radioGroupDisplayNumberOfWeights"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonSeven"
+                            style="@style/EnterTextStyleSettingsNew"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:text="@string/seven" />
+
+                            <RadioButton
+                                android:id="@+id/radioButtonThirty"
+                                style="@style/EnterTextStyleSettingsNew"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="true"
+                                android:text="@string/thirty" />
+                            <RadioButton
+                                android:id="@+id/radioButtonNinety"
+                                style="@style/EnterTextStyleSettingsNew"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="true"
+                                android:text="@string/ninety" />
+
+                            <RadioButton
+                                android:id="@+id/radioButtonAll"
+                                style="@style/EnterTextStyleSettingsNew"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="true"
+                                android:text="@string/all" />
+                            </RadioGroup>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/applyButton"
+                    android:text="@string/applyChanges"
+                    android:layout_marginTop="20dp"/>
+
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginStart="10dp"
+                   android:text="@string/license"
+                   android:id="@+id/licenseText"/>
+            </LinearLayout>
+        </ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/overlappedSettingsView"
+                android:orientation="vertical"
+                android:background="#fff"
+                android:visibility="invisible">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/closeLicenseButton"
+                            android:text="@string/close"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/licenseText"
+                            />
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

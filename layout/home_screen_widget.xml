@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin"
+    android:background="@drawable/border"
+    android:id="@+id/widgetFrame"
+    >
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="250dp"
+        android:padding="5dp"
+        android:background="@color/dark"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:id="@+id/widgetImageButton"
+            android:text="@string/weigh"
+            android:background="#fff"
+            android:textColor="#616161"
+            android:textStyle="bold"
+
+            />
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:id="@+id/widgetTextOne"
+            style="@style/EnterTextStyleSettings"
+            android:text="@string/app_name"
+            android:layout_marginStart="10dp"
+            android:textColor="#fff"
+            />
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_marginStart="10dp"
+            android:id="@+id/widgetTextToChange"
+            style="@style/EnterTextStyleSettings"
+            android:textColor="#fff"
+            />
+
+
+
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:id="@+id/widgetImageView"
+            android:importantForAccessibility="no"
+            android:background="@mipmap/ic_launcher"
+            />
+
+
+
+    </GridLayout>
+
+</FrameLayout>
